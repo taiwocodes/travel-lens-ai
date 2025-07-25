@@ -1,0 +1,132 @@
+2025-07-25 23:12:24.466 [warning] Dir "/home/famaktaiwo7/.pixi/envs" is not watchable (directory does not exist)
+2025-07-25 23:12:24.466 [info] Starting Environment refresh
+2025-07-25 23:12:24.466 [info] Searching for interpreters in posix paths locator
+2025-07-25 23:12:24.466 [info] Searching for pyenv environments
+2025-07-25 23:12:24.466 [info] Searching for conda environments
+2025-07-25 23:12:24.466 [info] Searching for global virtual environments
+2025-07-25 23:12:24.466 [info] Searching for custom virtual environments
+2025-07-25 23:12:24.466 [info] pyenv is not installed
+2025-07-25 23:12:24.466 [info] Finished searching for pyenv environments: 43 milliseconds
+2025-07-25 23:12:24.466 [info] Finished searching for custom virtual envs: 43 milliseconds
+2025-07-25 23:12:24.466 [info] > conda info --json
+2025-07-25 23:12:24.466 [info] > hatch env show --json
+2025-07-25 23:12:24.466 [info] cwd: .
+2025-07-25 23:12:24.466 [info] > pyenv which python
+2025-07-25 23:12:24.466 [info] cwd: .
+2025-07-25 23:12:24.466 [info] Finished searching for global virtual envs: 147 milliseconds
+2025-07-25 23:12:24.471 [info] Found: /bin/python --> /bin/python3.12
+2025-07-25 23:12:24.473 [info] Found: /bin/python3 --> /bin/python3.12
+2025-07-25 23:12:24.474 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-07-25 23:12:24.517 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2025-07-25 23:12:24.535 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2025-07-25 23:12:24.544 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-07-25 23:12:24.628 [info] Finished searching for interpreters in posix paths locator: 328 milliseconds
+2025-07-25 23:12:24.628 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-07-25 23:12:24.642 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-07-25 23:12:24.642 [info] Environments refresh paths discovered (event): 349 milliseconds
+2025-07-25 23:12:24.642 [info] Environments refresh paths discovered: 349 milliseconds
+2025-07-25 23:12:24.705 [info] Environments refresh finished (event): 412 milliseconds
+2025-07-25 23:12:24.717 [info] Environment refresh took 424 milliseconds
+2025-07-25 23:12:24.723 [info] Python interpreter path: /bin/python
+2025-07-25 23:12:28.729 [info] Starting Jedi language server for famaktaiwo7.
+2025-07-25 23:12:50.189 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/famaktaiwo7/requirements.txt
+2025-07-25 23:12:50.189 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-07-25 23:13:13.383 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:14:39.671 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:14:43.906 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:14:47.715 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:20.994 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:37.355 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:39.508 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:40.916 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:43.189 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:15:45.789 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:17:37.550 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:17:42.680 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:17:46.040 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:17:49.923 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:03.884 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:20.232 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:25.320 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:34.645 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:43.611 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:45.329 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:50.314 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:56.449 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:18:57.679 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:10.388 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:13.054 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:14.874 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:23.828 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:28.583 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:33.668 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:19:38.389 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:20:42.123 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:20:45.123 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:20:48.276 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:20:53.918 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:05.880 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:08.469 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:32.740 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:35.310 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:38.222 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:41.300 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:49.163 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:51.601 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:21:57.113 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:03.423 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:09.150 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:24.955 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:26.218 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:30.307 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:32.679 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:44.178 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:49.518 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:22:52.628 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:23:30.119 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:23:34.332 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:10.077 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:18.633 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:20.548 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:23.403 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:28.981 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:33.543 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:37.747 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:49.053 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:51.851 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:24:58.203 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:25:18.239 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:25:19.838 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:25:24.374 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:25:26.139 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:25:31.955 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:26:01.766 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:26:46.335 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:00.105 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:05.243 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:09.424 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:17.018 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:24.134 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:25.811 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:29.108 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py
+2025-07-25 23:27:31.669 [info] Discover tests for workspace name: famaktaiwo7 - uri: /home/famaktaiwo7/app.py

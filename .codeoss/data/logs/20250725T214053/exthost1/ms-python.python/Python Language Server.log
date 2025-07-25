@@ -1,0 +1,106 @@
+2025-07-25 21:44:29.449 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "13"
+
+2025-07-25 21:53:57.653 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "22"
+
+2025-07-25 21:59:33.650 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "46"
+
+2025-07-25 22:02:41.131 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "68"
+
+2025-07-25 22:02:41.807 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "69"
+
+2025-07-25 22:07:21.726 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "90"
+
+2025-07-25 22:08:57.901 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "106"
+
+2025-07-25 22:09:00.242 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "113"
+
+2025-07-25 22:09:00.599 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "116"
+
+2025-07-25 22:30:41.364 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 168 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///home/famaktaiwo7/.gemini/app.py'), position=24:76, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 383, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (76) is not in a valid range (0-29) for line 25 ('PROJECT_ID = "travel-lens-ai"\n').
+
+2025-07-25 22:30:41.367 [info] [Error - 10:30:41 PM] Request textDocument/documentHighlight failed.
+2025-07-25 22:30:41.367 [info]   Message: ValueError: `column` parameter (76) is not in a valid range (0-29) for line 25 ('PROJECT_ID = "travel-lens-ai"\n').
+  Code: -32603 
+[object Object]
+2025-07-25 22:31:02.224 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "174"
+
+2025-07-25 22:33:52.449 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "202"
+
+2025-07-25 22:34:03.366 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 206 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///home/famaktaiwo7/.gemini/app.py'), position=25:58, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 383, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (58) is not in a valid range (0-24) for line 26 ('LOCATION = "us-central1"\n').
+
+2025-07-25 22:34:03.368 [info] [Error - 10:34:03 PM] Request textDocument/documentHighlight failed.
+2025-07-25 22:34:03.368 [info]   Message: ValueError: `column` parameter (58) is not in a valid range (0-24) for line 26 ('LOCATION = "us-central1"\n').
+  Code: -32603 
+[object Object]
+2025-07-25 22:34:56.290 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "219"
+
+2025-07-25 22:39:28.283 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "260"
+
+2025-07-25 22:41:16.400 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "278"
+
+2025-07-25 22:54:13.282 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "327"
+
+2025-07-25 22:58:39.358 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 366 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///home/famaktaiwo7/.gemini/app.py'), position=27:34, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 383, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (34) is not in a valid range (0-31) for line 28 ('MODEL_NAME = "gemini-2.0-flash"\n').
+
+2025-07-25 22:58:39.361 [info] [Error - 10:58:39 PM] Request textDocument/documentHighlight failed.
+2025-07-25 22:58:39.361 [info]   Message: ValueError: `column` parameter (34) is not in a valid range (0-31) for line 28 ('MODEL_NAME = "gemini-2.0-flash"\n').
+  Code: -32603 
+[object Object]
+2025-07-25 23:11:04.291 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "377"
+
+2025-07-25 23:11:04.331 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "378"
+
+2025-07-25 23:11:24.363 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 387 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///home/famaktaiwo7/import%20sys.py'), position=6:15, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 383, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/helpers.py", line 473, in wrapper
+    raise ValueError('`line` parameter is not in a valid range.')
+ValueError: `line` parameter is not in a valid range.
+
+2025-07-25 23:11:24.364 [info] [Error - 11:11:24 PM] Request textDocument/documentHighlight failed.
+2025-07-25 23:11:24.364 [info]   Message: ValueError: `line` parameter is not in a valid range.
+  Code: -32603 
+[object Object]

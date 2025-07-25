@@ -1,0 +1,33 @@
+2025-07-24 20:12:04.861 [info] Extension host with pid 1401 started
+2025-07-24 20:12:04.861 [error] Error: EEXIST: file already exists, open '/home/famaktaiwo7/.codeoss/data/User/workspaceStorage/6dc9be94/vscode.lock'
+2025-07-24 20:12:04.867 [info] Lock '/home/famaktaiwo7/.codeoss/data/User/workspaceStorage/6dc9be94/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-07-24 20:12:04.872 [info] Lock '/home/famaktaiwo7/.codeoss/data/User/workspaceStorage/6dc9be94/vscode.lock': The lock does not look stale, elapsed: 667 ms, giving up.
+2025-07-24 20:12:04.881 [info] Lock '/home/famaktaiwo7/.codeoss/data/User/workspaceStorage/6dc9be94-1/vscode.lock': Lock acquired.
+2025-07-24 20:12:05.041 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2025-07-24 20:12:05.043 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-07-24 20:12:05.043 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-24 20:12:05.043 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-24 20:12:05.044 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-24 20:12:06.643 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-07-24 20:12:06.863 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-07-24 20:12:06.863 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-07-24 20:12:07.016 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onCommand:cloudshell.isAuthorized'
+2025-07-24 20:12:07.176 [info] Eager extensions activated
+2025-07-24 20:12:07.176 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-07-24 20:12:07.177 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-07-24 20:12:07.178 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-07-24 20:12:07.445 [info] Extension host terminating: received terminate message from renderer
+2025-07-24 20:12:07.448 [info] Lock '/home/famaktaiwo7/.codeoss/data/User/workspaceStorage/6dc9be94-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-07-24 20:12:07.485 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-07-24 20:12:09.509 [error] Error: Channel has been closed
+    at s (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:2431)
+    at Object.appendLine (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:117:2570)
+    at R.logOutputMessage (/google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:316522)
+    at R.error (/google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:316413)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:324781
+    at Object.dispose (/google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:9480)
+    at Object.dispose (/google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:549)
+    at Object.t.deactivate (/google/devshell/editor/code-oss-for-cloud-shell/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:22114)
+    at async Promise.all (index 8)
+    at bV.$ (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:115:9890)
+2025-07-24 20:12:09.509 [info] Extension host with pid 1401 exiting with code 0

@@ -1,0 +1,79 @@
+2025-07-25 23:12:24.473 [info] [main] Log level: Info
+2025-07-25 23:12:24.473 [info] [main] Validating found git in: "git"
+2025-07-25 23:12:24.473 [info] [main] Using git "2.43.0" from "git"
+2025-07-25 23:12:24.473 [info] [Model][doInitialScan] Initial repository scan started
+2025-07-25 23:12:24.473 [info] > git rev-parse --show-toplevel [85ms]
+2025-07-25 23:12:24.473 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.485 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-25 23:12:24.485 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.496 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-25 23:12:24.497 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.507 [info] > git rev-parse --show-toplevel [4ms]
+2025-07-25 23:12:24.507 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.517 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-25 23:12:24.517 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.534 [info] > git rev-parse --show-toplevel [9ms]
+2025-07-25 23:12:24.534 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.546 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-25 23:12:24.546 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.566 [info] > git rev-parse --show-toplevel [11ms]
+2025-07-25 23:12:24.566 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.577 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-25 23:12:24.577 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.596 [info] > git rev-parse --show-toplevel [12ms]
+2025-07-25 23:12:24.596 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.606 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-25 23:12:24.606 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:24.607 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-07-25 23:12:28.676 [info] > git rev-parse --show-toplevel [13ms]
+2025-07-25 23:12:28.676 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:47.738 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-25 23:12:47.738 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:50.214 [info] > git rev-parse --show-toplevel [4ms]
+2025-07-25 23:12:50.215 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:12:51.510 [info] > git rev-parse --show-toplevel [10ms]
+2025-07-25 23:12:51.510 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-07-25 23:40:19.463 [info] > git init -b main [75ms]
+2025-07-25 23:40:19.475 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-25 23:40:19.487 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-07-25 23:40:19.503 [info] [Model][openRepository] Opened repository: /home/famaktaiwo7
+2025-07-25 23:40:19.537 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:40:19.538 [info] > git config --get commit.template [12ms]
+2025-07-25 23:40:19.539 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-07-25 23:40:19.539 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:40:19.565 [info] > git status -z -uall [15ms]
+2025-07-25 23:40:19.575 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2025-07-25 23:40:19.781 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [176ms]
+2025-07-25 23:40:19.782 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:40:19.783 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2025-07-25 23:40:19.787 [info] > git config --get commit.template [8ms]
+2025-07-25 23:40:19.800 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:40:19.828 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [27ms]
+2025-07-25 23:40:19.828 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:40:19.854 [info] > git status -z -uall [17ms]
+2025-07-25 23:40:19.857 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-07-25 23:40:20.314 [info] > git check-ignore -v -z --stdin [2ms]
+2025-07-25 23:40:20.720 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [4ms]
+2025-07-25 23:40:20.720 [info] fatal: bad revision 'refs/heads/main'
+2025-07-25 23:40:20.720 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/main"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/main'\n"
+}
+2025-07-25 23:40:21.229 [info] > git check-ignore -v -z --stdin [2ms]

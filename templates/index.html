@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Lens AI</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a nice, clean font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple loading spinner animation */
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #09f;
+            animation: spin 1s ease infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Transition for smooth appearance of results */
+        #results-container {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-2xl mx-auto">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Travel Lens AI</h1>
+            <p class="mt-2 text-lg text-gray-600">Upload a travel photo to identify landmarks and get personalized tips.</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="bg-white p-6 md:p-8 rounded-2xl shadow-lg w-full">
+            <!-- Image Upload Section -->
+            <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center" id="upload-area">
+                <img id="image-preview" class="hidden max-h-64 mx-auto rounded-lg mb-4" alt="Image preview" />
+                <label for="image-upload" class="cursor-pointer text-blue-600 font-semibold">
+                    Choose an image
+                </label>
+                <input id="image-upload" type="file" class="hidden" accept="image/*">
+                <p id="file-name" class="text-sm text-gray-500 mt-2">No file selected</p>
+            </div>
+
+            <!-- Action Button -->
+            <div class="mt-6">
+                <button id="analyze-button" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center" disabled>
+                    <svg id="button-icon" class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span id="button-text">Analyze Travel Photo</span>
+                </button>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-container" class="mt-8 opacity-0">
+                <!-- Loading indicator will be shown here -->
+                <div id="loading-indicator" class="hidden flex flex-col items-center justify-center text-center">
+                    <div class="spinner"></div>
+                    <p class="mt-3 text-gray-600 font-medium">Analyzing your masterpiece...</p>
+                </div>
+                <!-- Error message will be shown here -->
+                <div id="error-message" class="hidden p-4 bg-red-100 text-red-700 rounded-lg"></div>
+                <!-- Analysis results will be injected here -->
+                <div id="analysis-output"></div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const imageUpload = document.getElementById('image-upload');
+        const imagePreview = document.getElementById('image-preview');
+        const fileNameDisplay = document.getElementById('file-name');
+        const analyzeButton = document.getElementById('analyze-button');
+        const buttonText = document.getElementById('button-text');
+        const buttonIcon = document.getElementById('button-icon');
+        const resultsContainer = document.getElementById('results-container');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const errorMessage = document.getElementById('error-message');
+        const analysisOutput = document.getElementById('analysis-output');
+
+        // --- Event Listeners ---
+
+        // Listen for file selection
+        imageUpload.addEventListener('change', () => {
+            const file = imageUpload.files[0];
+            if (file) {
+                // Show image preview
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    imagePreview.src = e.target.result;
+                    imagePreview.classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+
+                // Update file name and enable button
+                fileNameDisplay.textContent = file.name;
+                analyzeButton.disabled = false;
+            }
+        });
+
+        // Listen for button click
+        analyzeButton.addEventListener('click', async () => {
+            const file = imageUpload.files[0];
+            if (!file) return;
+
+            // --- UI Reset and Loading State ---
+            resetUI();
+            setLoadingState(true);
+
+            // --- Prepare and Send Data ---
+            const formData = new FormData();
+            formData.append('image', file);
+
+            const apiEndpoint = new URL('/analyze', window.location.origin).href;
+
+            try {
+                const response = await fetch(apiEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                // FIX: Improved error handling to check the content type of the response.
+                // This prevents the "Unexpected token '<'" error when the server returns
+                // an HTML error page instead of the expected JSON.
+                if (!response.ok) {
+                    const contentType = response.headers.get("content-type");
+                    if (contentType && contentType.indexOf("application/json") !== -1) {
+                        // If the server sent a JSON error, parse it and show it.
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || `Server error: ${response.status}`);
+                    } else {
+                        // If the server sent something else, show a more helpful generic error.
+                        throw new Error(`The server returned an unexpected response. Please check the backend logs. (Status: ${response.status})`);
+                    }
+                }
+
+                const data = await response.json();
+                displayResults(data);
+
+            } catch (error) {
+                console.error('Error:', error);
+                displayError(error.message);
+            } finally {
+                setLoadingState(false);
+            }
+        });
+
+        // --- UI Helper Functions ---
+
+        function setLoadingState(isLoading) {
+            if (isLoading) {
+                analyzeButton.disabled = true;
+                loadingIndicator.classList.remove('hidden');
+                buttonText.textContent = 'Analyzing...';
+            } else {
+                analyzeButton.disabled = false;
+                loadingIndicator.classList.add('hidden');
+                buttonText.textContent = 'Analyze Travel Photo';
+            }
+        }
+
+        function resetUI() {
+            resultsContainer.style.opacity = '1';
+            errorMessage.classList.add('hidden');
+            analysisOutput.innerHTML = '';
+        }
+
+        function displayError(message) {
+            errorMessage.textContent = `Analysis failed: ${message}`;
+            errorMessage.classList.remove('hidden');
+        }
+
+        function displayResults(data) {
+            // Clear previous results
+            analysisOutput.innerHTML = '';
+
+            // Create the result card
+            const card = document.createElement('div');
+            card.className = 'bg-gray-50 border border-gray-200 rounded-xl p-6 animate-fade-in';
+
+            // Landmark Name and Location
+            const header = document.createElement('div');
+            header.innerHTML = `
+                <h2 class="text-2xl font-bold text-gray-900">${data.landmarkName}</h2>
+                <p class="text-md text-gray-500 font-medium">${data.location.city}, ${data.location.country}</p>
+            `;
+            card.appendChild(header);
+
+            // Description
+            const description = document.createElement('p');
+            description.className = 'text-gray-700 mt-4';
+            description.textContent = data.description;
+            card.appendChild(description);
+
+            // Divider
+            const divider = document.createElement('hr');
+            divider.className = 'my-6';
+            card.appendChild(divider);
+
+            // Recommendations
+            const recommendationsHeader = document.createElement('h3');
+            recommendationsHeader.className = 'text-lg font-semibold text-gray-800';
+            recommendationsHeader.textContent = 'Personalized Recommendations';
+            card.appendChild(recommendationsHeader);
+
+            const recommendationsList = document.createElement('ul');
+            recommendationsList.className = 'mt-2 list-disc list-inside space-y-2 text-gray-600';
+            data.personalizedRecommendations.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                recommendationsList.appendChild(li);
+            });
+            card.appendChild(recommendationsList);
+            
+            // Photo Tips
+            if(data.photoTips) {
+                const photoTipsHeader = document.createElement('h3');
+                photoTipsHeader.className = 'text-lg font-semibold text-gray-800 mt-6';
+                photoTipsHeader.textContent = 'Photo Tip';
+                card.appendChild(photoTipsHeader);
+
+                const photoTip = document.createElement('p');
+                photoTip.className = 'text-gray-600 mt-2 italic';
+                photoTip.textContent = data.photoTips;
+                card.appendChild(photoTip);
+            }
+
+            analysisOutput.appendChild(card);
+        }
+
+    </script>
+</body>
+</html>

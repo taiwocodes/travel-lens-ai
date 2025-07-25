@@ -1,0 +1,95 @@
+2025-07-25 21:43:42.703 [info] Starting Environment refresh
+2025-07-25 21:43:42.703 [info] Searching for interpreters in posix paths locator
+2025-07-25 21:43:42.703 [info] Searching for pyenv environments
+2025-07-25 21:43:42.703 [info] Searching for conda environments
+2025-07-25 21:43:42.703 [info] Searching for global virtual environments
+2025-07-25 21:43:42.703 [info] Searching for custom virtual environments
+2025-07-25 21:43:42.703 [info] pyenv is not installed
+2025-07-25 21:43:42.703 [info] Finished searching for pyenv environments: 17 milliseconds
+2025-07-25 21:43:42.703 [info] Finished searching for custom virtual envs: 17 milliseconds
+2025-07-25 21:43:42.703 [info] > conda info --json
+2025-07-25 21:43:42.703 [info] Finished searching for global virtual envs: 30 milliseconds
+2025-07-25 21:43:42.704 [info] Found: /bin/python --> /bin/python3.12
+2025-07-25 21:43:42.705 [info] Found: /bin/python3 --> /bin/python3.12
+2025-07-25 21:43:42.707 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-07-25 21:43:42.720 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2025-07-25 21:43:42.721 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2025-07-25 21:43:42.721 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-07-25 21:43:42.758 [info] Finished searching for interpreters in posix paths locator: 89 milliseconds
+2025-07-25 21:43:42.758 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-07-25 21:43:42.774 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-07-25 21:43:42.774 [info] Environments refresh paths discovered (event): 113 milliseconds
+2025-07-25 21:43:42.774 [info] Environments refresh paths discovered: 114 milliseconds
+2025-07-25 21:43:42.826 [info] Environments refresh finished (event): 166 milliseconds
+2025-07-25 21:43:42.837 [info] Environment refresh took 177 milliseconds
+2025-07-25 21:43:42.844 [info] Python interpreter path: /bin/python
+2025-07-25 21:43:44.887 [info] Starting Jedi language server for default.
+2025-07-25 21:44:06.406 [info] CreateEnv Trigger - Workspace not found for Untitled-1
+2025-07-25 21:44:16.852 [info] Send text to terminal: /bin/python "/home/famaktaiwo7/import sys.py"
+2025-07-25 21:44:16.989 [info] Send text to terminal: /bin/python Untitled-1
+2025-07-25 22:01:13.646 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/famaktaiwo7/requirements.txt
+2025-07-25 22:01:13.646 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ~/requirements.txt
+2025-07-25 22:01:16.807 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/famaktaiwo7/requirements.txt
+2025-07-25 22:01:16.807 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ~/requirements.txt
+2025-07-25 22:43:29.940 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/famaktaiwo7/requirements.txt
+2025-07-25 22:43:29.940 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ~/requirements.txt

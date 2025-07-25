@@ -1,0 +1,49 @@
+2025-07-25 21:41:01.509 [info] Extension host with pid 1672 started
+2025-07-25 21:41:01.768 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-07-25 21:41:02.068 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-07-25 21:41:02.233 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-07-25 21:41:02.233 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-07-25 21:41:02.582 [info] Eager extensions activated
+2025-07-25 21:41:02.583 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-07-25 21:41:02.584 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-07-25 21:41:02.584 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-07-25 21:41:02.585 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-07-25 21:41:02.586 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-07-25 21:41:05.897 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-25 21:41:05.899 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-25 21:41:05.902 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-07-25 21:41:06.085 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-07-25 21:43:41.786 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onCommand:python.createNewFile'
+2025-07-25 21:43:42.435 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-07-25 21:44:16.573 [warning] Illegal argument: TextEditor(vs.editor.ICodeEditor:1,$model6)
+2025-07-25 22:09:47.722 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-07-25 22:17:45.421 [info] ExtensionService#_doActivateExtension vscjava.vscode-maven, startup: false, activationEvent: 'onView:mavenProjects'
+2025-07-25 22:30:41.367 [error] [ms-python.python] provider FAILED
+2025-07-25 22:30:41.395 [error] Error: ValueError: `column` parameter (76) is not in a valid range (0-29) for line 25 ('PROJECT_ID = "travel-lens-ai"\n').
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-07-25 22:34:03.368 [error] [ms-python.python] provider FAILED
+2025-07-25 22:34:03.368 [error] Error: ValueError: `column` parameter (58) is not in a valid range (0-24) for line 26 ('LOCATION = "us-central1"\n').
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-07-25 22:58:39.361 [error] [ms-python.python] provider FAILED
+2025-07-25 22:58:39.361 [error] Error: ValueError: `column` parameter (34) is not in a valid range (0-31) for line 28 ('MODEL_NAME = "gemini-2.0-flash"\n').
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-07-25 23:11:24.364 [error] [ms-python.python] provider FAILED
+2025-07-25 23:11:24.365 [error] Error: ValueError: `line` parameter is not in a valid range.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-07-25 23:12:15.598 [info] Extension host terminating: received terminate message from renderer
+2025-07-25 23:12:15.790 [info] Extension host with pid 1672 exiting with code 0
