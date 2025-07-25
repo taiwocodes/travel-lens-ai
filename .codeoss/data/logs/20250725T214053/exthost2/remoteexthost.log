@@ -22,3 +22,21 @@
 2025-07-25 23:38:18.939 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
 2025-07-25 23:40:19.588 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
 2025-07-25 23:40:19.863 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:40:24.210 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:40:25.218 [error] Error: Failed to execute git
+    at t.Git._exec (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:164815)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at t.Git.exec (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:163934)
+    at z.exec (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:169608)
+    at z.handleCommitError (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:178051)
+    at z.commit (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:177561)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:285853
+    at O.retryRun (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:301510)
+    at O.run (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:301114)
+    at O.commit (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:285535)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/github/dist/extension.js:2:30100
+2025-07-25 23:40:43.081 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:41:08.131 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:41:13.190 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:41:18.241 [warning] [Decorations] CAPPING events from decorations provider vscode.git 521
+2025-07-25 23:42:44.958 [warning] [Decorations] CAPPING events from decorations provider vscode.git 522

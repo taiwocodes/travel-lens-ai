@@ -77,3 +77,108 @@ Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
   "stderr": "fatal: bad revision 'refs/heads/main'\n"
 }
 2025-07-25 23:40:21.229 [info] > git check-ignore -v -z --stdin [2ms]
+2025-07-25 23:40:24.112 [info] > git add -A -- . [4598ms]
+2025-07-25 23:40:24.150 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - --allow-empty-message [28ms]
+2025-07-25 23:40:24.150 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-07-25 23:40:24.161 [info] > git config --get-all user.name [2ms]
+2025-07-25 23:40:24.180 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:40:24.181 [info] > git config --get commit.template [10ms]
+2025-07-25 23:40:24.182 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-07-25 23:40:24.182 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:40:24.203 [info] > git status -z -uall [11ms]
+2025-07-25 23:40:24.205 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-07-25 23:40:25.155 [info] > git show --textconv :app.py [33ms]
+2025-07-25 23:40:25.156 [info] > git show --textconv HEAD:app.py [24ms]
+2025-07-25 23:40:25.156 [info] > git ls-files --stage -- app.py [13ms]
+2025-07-25 23:40:25.179 [info] > git hash-object -t tree /dev/null [3ms]
+2025-07-25 23:40:25.179 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/famaktaiwo7/app.py.git?%7B%22path%22%3A%22%2Fhome%2Ffamaktaiwo7%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-07-25 23:40:25.179 [info] > git cat-file -s ddc3e5cfb6ea88093ce7e169ef4c96f649f13d5d [13ms]
+2025-07-25 23:40:25.181 [info] > git ls-tree -l HEAD -- app.py [26ms]
+2025-07-25 23:40:25.181 [info] fatal: Not a valid object name HEAD
+2025-07-25 23:40:25.181 [warning] [GitFileSystemProvider][stat] File not found - git:/home/famaktaiwo7/app.py.git?%7B%22path%22%3A%22%2Fhome%2Ffamaktaiwo7%2Fapp.py%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-07-25 23:40:25.792 [info] > git ls-files --stage -- app.py [2ms]
+2025-07-25 23:40:25.803 [info] > git cat-file -s ddc3e5cfb6ea88093ce7e169ef4c96f649f13d5d [2ms]
+2025-07-25 23:40:25.965 [info] > git show --textconv :app.py [2ms]
+2025-07-25 23:40:26.627 [info] > git check-ignore -v -z --stdin [3ms]
+2025-07-25 23:40:43.019 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [5ms]
+2025-07-25 23:40:43.019 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2025-07-25 23:40:43.030 [info] > git config --get-all user.name [2ms]
+2025-07-25 23:40:43.050 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:40:43.051 [info] > git config --get commit.template [11ms]
+2025-07-25 23:40:43.052 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-07-25 23:40:43.052 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:40:43.073 [info] > git status -z -uall [12ms]
+2025-07-25 23:40:43.076 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-07-25 23:40:44.615 [info] > git ls-files --stage -- app.py [2ms]
+2025-07-25 23:40:44.626 [info] > git cat-file -s ddc3e5cfb6ea88093ce7e169ef4c96f649f13d5d [2ms]
+2025-07-25 23:40:44.774 [info] > git show --textconv :app.py [2ms]
+2025-07-25 23:41:08.097 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:41:08.097 [info] > git config --get commit.template [11ms]
+2025-07-25 23:41:08.098 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-07-25 23:41:08.098 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:41:08.121 [info] > git status -z -uall [13ms]
+2025-07-25 23:41:08.126 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-07-25 23:41:13.157 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:41:13.158 [info] > git config --get commit.template [12ms]
+2025-07-25 23:41:13.159 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-07-25 23:41:13.159 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:41:13.182 [info] > git status -z -uall [14ms]
+2025-07-25 23:41:13.184 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-07-25 23:41:18.213 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:41:18.214 [info] > git config --get commit.template [11ms]
+2025-07-25 23:41:18.215 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-07-25 23:41:18.215 [warning] [Git][getBranch] No such branch: main
+2025-07-25 23:41:18.235 [info] > git status -z -uall [11ms]
+2025-07-25 23:41:18.237 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-07-25 23:42:44.894 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [64ms]
+2025-07-25 23:42:44.905 [info] > git config --get commit.template [2ms]
+2025-07-25 23:42:44.927 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:42:44.928 [info] > git config --get commit.template [11ms]
+2025-07-25 23:42:44.929 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-07-25 23:42:44.951 [info] > git status -z -uall [12ms]
+2025-07-25 23:42:44.953 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-07-25 23:42:45.490 [info] > git blame --root --incremental 9daf562a13c06b8e6007c9ad7051d74296e1b60c -- app.py [23ms]
+2025-07-25 23:42:45.495 [info] > git config --get commit.template [6ms]
+2025-07-25 23:42:45.507 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:42:45.509 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-07-25 23:42:45.535 [info] > git status -z -uall [15ms]
+2025-07-25 23:42:45.536 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-07-25 23:42:45.565 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:42:45.565 [info] > git config --get commit.template [12ms]
+2025-07-25 23:42:45.567 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-07-25 23:42:45.593 [info] > git status -z -uall [15ms]
+2025-07-25 23:42:45.594 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-07-25 23:42:45.987 [info] > git check-ignore -v -z --stdin [3ms]
+2025-07-25 23:42:46.375 [info] > git ls-files --stage -- app.py [2ms]
+2025-07-25 23:42:46.387 [info] > git cat-file -s ddc3e5cfb6ea88093ce7e169ef4c96f649f13d5d [3ms]
+2025-07-25 23:42:46.545 [info] > git show --textconv :app.py [3ms]
+2025-07-25 23:42:46.568 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [1124ms]
+2025-07-25 23:43:32.887 [info] [Git][getRemotes] No remotes found in the git config file
+2025-07-25 23:43:32.887 [info] > git config --get commit.template [10ms]
+2025-07-25 23:43:32.889 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-07-25 23:43:32.912 [info] > git status -z -uall [12ms]
+2025-07-25 23:43:32.913 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]

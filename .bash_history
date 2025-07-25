@@ -13,3 +13,4 @@ gcloud config set project travel-lens-ai
 gcloud auth application-default login
 python app.py
 /bin/python /home/famaktaiwo7/.gemini/app.py
+git config --global user.name taiwocodes
