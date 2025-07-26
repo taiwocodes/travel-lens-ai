@@ -111,8 +111,10 @@ def home():
     return render_template('index.html')
 
 # checklist to run this app:
-# 1. Make sure you've run `pip install -r requirements.txt`
-# 2. In the Cloud Shell terminal, run: `python app.py`
+# 1. (re)confirm project in cloudshell. run gcloud config set project travel-lens-ai
+# 2. run `pip install -r requirements.txt`
+# 3. run `python app.py`
+# 4. in case of err, force CloudShell to reauthenticate. run gcloud auth application-default login
 if __name__ == '__main__':
     # run on a port that Cloud Shell can easily preview (8080); flask runs on 5000.
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=True)
