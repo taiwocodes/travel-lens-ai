@@ -19,8 +19,8 @@ CORS(app)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024 
 
 PROJECT_ID = "travel-lens-ai"
-LOCATION = "us-central1"
-MODEL_NAME = "gemini-2.0-flash-exp"
+LOCATION = "global"
+MODEL_NAME = "gemini-3.0-flash-exp"
 
 
 # core analysis
